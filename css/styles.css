@@ -20,6 +20,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
 /* generic styles for the page */
 body {
   padding: 0;
@@ -29,9 +30,7 @@ body {
   color: var(--white);
   font-size: var(--font-size);
 }
-h1,
-h2,
-h3 {
+h1,h2,h3 {
   margin: 0;
 }
 a {
@@ -44,7 +43,11 @@ a:hover {
 }
 /* intro styles */
 #intro {
-  padding-bottom: 10rem;
+  /* padding or margin numbers in order from left to right: top, right,bottom,left */
+  padding: 4rem 1rem 10rem 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+
 }
 
 #intro p {
@@ -72,11 +75,13 @@ a:hover {
 /* contact section */
 
 #contact {
-  width: 400px;
+ max-width: 400px;
   text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
+  background-color: var(--plum);
 }
+
 
 #contact p:last-child {
   margin-top: 3rem;
@@ -136,17 +141,6 @@ nav [class*="fa-"]:hover {
   color: white;
   background-color: var(--hotmag);
 }
-@media (min-width: 850px) {
-  nav {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  nav li:first-child {
-    flex-basis: auto;
-    text-align: left;
-    margin-right: auto;
-  }
-}
 
 /* Footer Section */
 footer {
@@ -162,4 +156,15 @@ footer ul {
   align-items: center;
   gap: 3rem;
   font-size: 3rem;
+}
+@media (min-width: 850px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
 }
