@@ -247,6 +247,11 @@ article {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
+#projects {
+  max-width: 1200px;
+  margin: auto;
+}
+
 #projects img {
   grid-column: 1/6;
   grid-row: 1/2;
@@ -264,7 +269,7 @@ article {
 #projects .reverse .text {
 grid-column: 1/7;
 order: 2;
-text0align: left;
+text-align: left;
 }
 
 #projects .reverse img {
@@ -273,7 +278,7 @@ grid-row: 1/2;
 }
 
 #projects .reverse ul {
-jusitfy-content: flex-start;
+justify-content: flex-start;
 }
 
 }
